@@ -1,16 +1,14 @@
 require 'rubygems'
 require 'sinatra'
 
+
+
+
 get '/' do
 
-
-"Hola desconocido"
-
-end
-
-get '/:name' do
-@name= params[:name]
+@name= params[:nombre]
+#Hola desconocido!" if  @name.empty?
 erb :home
- #{}"Hola desconocido!" if params.empty?
+
  #{}"Hola #{params[:name]}!"
 end
